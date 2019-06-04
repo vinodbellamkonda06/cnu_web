@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>TestData</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="/static/home_banner.css">
+<style>
+.hco{
+text-align:center;
+margin-top:150px;
+color:black;
+
+}
+.hco_font{
+font-size:80px;
+font-family: "Times New Roman", Times, serif;
+font-style: italic;
+}
+.button_contact_services{
+border-radius: 25px;
+width:150px;
+}
+.navbar-brand{
+font-size:30px;
+}
+.body{
+margin-top:50px;
+}
+</style>
+</head>
+<body>
+<div>
+    {% include "nav.html" %}
+</div>
+<div class="body">
+    <div class="col-sm-2"></div>
+    <div class="col-sm-8 hco">
+        <h2 class="hco_font"> Our Clinic </h2>
+        <button type="button" class="btn btn-primary button_contact_services">
+                <span style='color:white' class="glyphicon glyphicon-envelope"></span> &nbsp
+            Contact US
+        </button>
+        <button type="button" class="btn btn-success button_contact_services">
+            <span style='color:white' class="glyphicon glyphicon-list"></span> &nbsp
+            Our Services
+        </button>
+    </div>
+    <div class="col-sm-2"></div>
+
+</div>
+</body>
+</html>

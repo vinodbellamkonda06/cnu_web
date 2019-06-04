@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Table Task</title>
+</head>
+<body>
+<div>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>User</th>
+            <th>SpoolTime</th>
+            <th>Status</th>
+            <th>priority</th>
+        </tr>
+        {% for k,l in data.items %}
+        <tr>
+            <td>{{ k }}</td>
+            <td>{{ l.user }}</td>
+            <td>{{ l.spoolTime }}</td>
+            <td>{{ l.status }}</td>
+            <td>{{ l.priority }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</div>
+</body>
+</html>

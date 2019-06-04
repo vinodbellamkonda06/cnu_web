@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mayo Doctors</title>
+    <link rel="stylesheet" href="/static/doctors.css">
+</head>
+<body>
+<div>
+    {% include "nav.html" %}
+</div>
+<div class="body">
+</div>
+<div class="doctors_bar">
+    <span class="doctor_text"> Our Doctors </span><br>
+</div>
+<div class="doctors_group">
+    <div class="container">
+        <div class="col-sm-4 side4">
+            <div class="thumbnail">
+                    <div class="doctor1">
+                    </div>
+                    <div class="caption">
+                      {% for k in obj_doctors %}
+                      <span>{{ k.name }} </span>
+                        <span class="btn_right">{{ k.specialization }}</span>
+                      <p>{{ k.description }}</p>
+                      {% endfor %}
+                    </div>
+                    <div class="btn_align">
+                        <span class="btn_left">
+                            <button type="button" class="btn btn-info">View Profile</button>
+                        </span>
+                        <span class="btn_right">
+                            <button type="button" class="btn btn-info">Get Appointment</button>
+                        </span>
+                    </div>
+            </div>
+        </div>
+        <div class="col-sm-4 side4">
+            <div class="thumbnail">
+                    <div class="doctor1">
+                    </div>
+                    <div class="caption">
+                      <span>Dr Sreenivas </span>
+                        <span class="btn_right">Dentist</span>
+                      <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                    <div class="btn_align">
+                        <span class="btn_left">
+                            <button type="button" class="btn btn-info">View Profile</button>
+                        </span>
+                        <span class="btn_right">
+                            <button type="button" class="btn btn-info">Get Appointment</button>
+                        </span>
+                    </div>
+            </div>
+        </div>
+        <div class="col-sm-4 side4">
+            <div class="thumbnail">
+                    <div class="doctor1">
+                    </div>
+                    <div class="caption">
+                      <span>Dr Sreenivas </span>
+                      <span class="btn_right">Dentist</span>
+                      <p>Lorem ipsum donec id elit non mi porta gravida at eget metus.</p>
+                    </div>
+                    <div class="btn_align">
+                        <span class="btn_left">
+                            <button type="button" class="btn btn-info">View Profile</button>
+                        </span>
+                        <span class="btn_right">
+                            <button type="button" class="btn btn-info">Get Appointment</button>
+                        </span>
+                    </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div>
+    {% include "footer.html" %}
+</div>
+</body>
+</html>

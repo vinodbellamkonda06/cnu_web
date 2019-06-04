@@ -1,0 +1,33 @@
+.body{
+    margin-top:31px;
+    padding:0px;
+    background-image: url(slide.jpg);
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 400px;
+}
+.doctors_bar{
+    text-align:center;
+    font-size:30px;
+    background:#80aaff;
+    color:white;
+    padding:15px;
+}
+.doctors_group{
+padding:20px 0px;
+}
+.doctors_group.container.side4.thumbnail,.doctor1{
+    background-image: url(doctor.jpg);
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 300px;
+}
+.side4{
+padding:0px 10px;
+}
+.btn_align{
+padding:0px 20px;
+}
+.btn_right{
+float:right;
+}

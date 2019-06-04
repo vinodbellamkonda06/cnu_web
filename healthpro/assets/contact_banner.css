@@ -1,0 +1,48 @@
+body{
+    margin:0px;
+    padding:0px;
+}
+.body{
+    margin-top:31px;
+    padding:0px;
+    background-image: url(slide.jpg);
+    background-repeat:no-repeat;
+    width: 100%;
+    height: 400px;
+}
+.clear{clear:both;}
+.contact_bar{
+margin:0px;
+}
+.contact_bar,.contact{
+    text-align:center;
+    font-size:30px;
+    background:#80aaff;
+    color:white;
+    padding:15px;
+}
+.map_bar{
+}
+.form_bar{
+padding:50px;
+}
+.form_bar_row{
+padding:10px 0px;
+}
+.address{
+font-size:25px;
+font-family:bolt;
+color:#b3b3b3;
+}
+.vl {
+  border-right: 1px solid #99ccff;
+  height: 200px;
+}
+.form_bar .side_address{
+padding-left:50px;
+}
+.mayo{
+color:#99ccff;
+font-size:20px;
+font-family:bolt;
+}

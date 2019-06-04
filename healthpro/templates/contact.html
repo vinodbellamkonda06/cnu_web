@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact</title>
+    <link rel="stylesheet" href="/static/contact_banner.css">
+</head>
+<body>
+<div>
+    {% include "nav.html" %}
+</div>
+<div class="body">
+</div>
+<div class="clear"></div>
+<div class="contact_bar">
+    <span class="contact"> Contact Us</span><br>
+</div>
+<div class="map_bar">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d733.166440416953!2d77.70327478610285!3d12.950921468588751!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae123594a13b2d%3A0x8f5e7b2be9d75869!2sVenkatadri+Gents+PG+Munnekolala!5e1!3m2!1sen!2sin!4v1546146226144" width="100%" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+<div class="form_bar">
+    <div class="container">
+        <div class="col-sm-6">
+            <div class="row form_bar_row">
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="name" placeholder="NAME">
+                </div>
+                <div class="col-sm-4">
+                    <input type="email" class="form-control" id="email" placeholder="EMAIL">
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" class="form-control" id="number" placeholder="MOBILE">
+                </div>
+            </div>
+            <div class="row form_bar_row">
+                <textarea class="form-control" rows="5" id="comment" placeholder="QUERY"></textarea>
+            </div>
+            <button type="button" class="btn btn-info">Send Message</button>
+        </div>
+        <div class="col-sm-1 vl"></div>
+        <div class="col-sm-5 side_address">
+            <div class="row">
+                <span class="address">ADDRESS</span><br>
+                <span class="mayo"> Mayo Clinic </span>
+                <p>132, 1st Main Rd, CKB Layout, Kasavanahalli Village, Marathahalli, Bengaluru, Karnataka 560037.</p>
+            </div>
+            <div class="row">
+                <span class="address">EMAIL</span><br>
+                <span class="mayo"> mayoclinic@gmail.com </span>
+            </div>
+            <div class="row">
+                <span class="address">TELEPHONES</span><br>
+                <span class="mayo"> Number </span>: +917702104064<br>
+                <span class="mayo"> Fax </span>: +917411302862
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
