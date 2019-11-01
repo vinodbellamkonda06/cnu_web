@@ -17,6 +17,9 @@ def nav(request):
 def footer(request):
     return render(request, 'footer.html')
 
+def gitTest(request):
+    pass
+
 
 def doctors(request):
     obj_doctors = Mayo_doct.objects.all()
